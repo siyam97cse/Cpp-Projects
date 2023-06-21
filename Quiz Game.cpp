@@ -19,7 +19,7 @@ int main(){
 int playQuiz(){
     char c;
     char option;
-    int score;
+    int score=0;
     cout<<"-------------Welcome to Quiz Game-----------"<<endl;
     cout<<"-----Please follow the imstruction----------"<<endl;
     cout<<"Step-1 : Quiz contains total 10 Questions"<<endl;
@@ -55,5 +55,6 @@ int playQuiz(){
     else{
         cout<<"You have entered wrong value. Please enter s."<<endl;
     }
+    return score;
     
 }
