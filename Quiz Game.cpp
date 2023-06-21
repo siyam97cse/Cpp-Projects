@@ -2,13 +2,22 @@
 using namespace std;
 int main(){
     int finalResult=0;
+    char playAgain;
     int playQuiz(void);
     finalResult=playQuiz();
     
     cout<<"Your Score is: "<<finalResult<<endl;
     
-    if(finalResult>=1){
+    if(finalResult>1){
         cout<<"You are pass"<<endl;
+        cout<<"Do you want to play again? y or n"<<endl;
+        cin>>playAgain;
+        if(playAgain=='Y' || playAgain=='y'){
+            playQuiz();
+        }
+        else{
+            cout<<"Thanks for playing!!";
+        }
     }
     else{
         cout<<"You are fail"<<endl;
